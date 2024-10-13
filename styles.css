@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+body {
+    margin: 0;
+}
+#content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: -1;
+    width: 40vw;
+    flex: 0 0 40vw; /* Prevent further shrinking */
+}
+.save-the-date-video {
+    
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    z-index: -2;
+    width: 60vw;
+    flex: 0 0 60vw; /* Maintain the initial size */
+}
+.text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1; /* Allow growing if needed */
+    transform: translateY(-90px);
+}
+.leaf-top-left,
+.leaf-top-right,
+.leaf-bottom-left,
+.leaf-bottom-right {
+    flex-shrink: 0; /* Prevent shrinking */
+}
+.leaf-top-left {
+    width: 579px;
+    height: 508.1px;
+    transform: translateX(-65px);
+}
+.leaf-top-right {
+    width: 476.76px;
+    height: 447.86px;
+    align-self: end;
+}
+.leaf-bottom-left {
+    width: 579px;
+    height: 508.1px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0px;
+    transform: translateX(-36px) rotate(270deg);
+}
+.leaf-bottom-right {
+    width: 329px;
+    height: 329.63px;
+    transform: translateY(-194px);
+}
+.font-1 {
+    font-family: Literata;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 53.46px;
+    text-align: center;
+    color: #6A490B;
+}
+.font-2 {
+    font-family: Lavishly Yours;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 204.8px;
+    text-align: left;
+    color: #6A490B;
+}
+.bold {
+    font-weight: 700;
+}

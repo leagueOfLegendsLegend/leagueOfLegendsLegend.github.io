@@ -1,1 +1,31 @@
-Hello World
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id='content'>
+        <div class='video-container'>
+            <!-- <%= inline_svg_tag "leaf1.svg", class: "leaf-top-left" %> -->
+            <video class="save-the-date-video" width="520" height="920" controls>
+                <source src="videos/save_the_date_video.mp4" type="video/mp4">
+                <source src="videos/save_the_date_video.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <!-- <%= inline_svg_tag "leaf1.svg", class: "leaf-bottom-left" %> -->
+        </div>
+        <div class="card-container">
+            <!-- <%= inline_svg_tag "leaf3.svg", class: "leaf-top-right" %> -->
+            <div class="text-container">
+                <span class="font-1">Save the date</span>
+                <span class="font-1">for the wedding of</span>
+                <span class="font-2">Alex & Becca</span>
+                <span class="font-1 bold">September 24th, 2025</span>
+                <span class="font-1 bold">Uluwatu, Bali</span>
+            </div>
+            <!-- <%= inline_svg_tag "leaf2.svg", class: "leaf-bottom-right" %> -->
+        </div>
+    </div>
+</body>
+</html>
